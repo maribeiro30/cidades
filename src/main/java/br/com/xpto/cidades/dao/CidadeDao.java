@@ -7,9 +7,9 @@ import java.util.Optional;
 
 public interface CidadeDao {
 
-    List<Cidade> saveAll(List<Cidade> entities);
+    Optional<List<Cidade>> saveAll(List<Cidade> ts);
 
-    public Optional<Cidade> save(Cidade cidade);
+    Optional<Cidade> save(Cidade cidade);
 
     void deleteById(Long id);
 

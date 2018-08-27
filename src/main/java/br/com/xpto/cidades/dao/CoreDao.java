@@ -19,7 +19,7 @@ public abstract class CoreDao<T, R extends CrudRepository<T,Long>> {
     }
 
 
-    void deleteById(Long id){
+    public void deleteById(Long id){
         repository.deleteById(id);
     }
 

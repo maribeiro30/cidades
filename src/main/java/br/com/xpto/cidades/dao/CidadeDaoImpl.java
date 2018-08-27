@@ -8,8 +8,5 @@ import org.springframework.stereotype.Repository;
 public class CidadeDaoImpl extends CoreDao<Cidade,CidadeRepository> implements CidadeDao {
 
 
-    @Override
-    public void deleteById(Long id) {
-        repository.deleteById(id);
-    }
+
 }
